@@ -17,6 +17,9 @@ dependencies = [
     "pusher",
 ]
 
+[project.scripts]
+main = "termchatter:main"
+
 [project.urls]
 Homepage = "https://github.com/GrimmTMM/termchatter"
 Issues = "https://github.com/GrimmTMM/termchatter/issues"
