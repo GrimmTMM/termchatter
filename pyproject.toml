@@ -1,6 +1,6 @@
 [project]
 name = "termchatter"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="GrimmTMM", email="themagnetboy1207@gmail.com" },
 ]
@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-termchatter = "termchatter:main"
+termchatter = "termchatter.termchatter:main"
 
 [project.urls]
 Homepage = "https://github.com/GrimmTMM/termchatter"
