@@ -4,7 +4,7 @@ import re
 import os
 import sys
 sys.dont_write_bytecode = True
-import pusher_checker
+from . import pusher_checker
 
 def main():
     key_config = './.appkey'

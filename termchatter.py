@@ -1,7 +1,7 @@
 import sys
-import setup
-import send_message
-import receive_message
+from . import setup
+from . import send_message
+from . import receive_message
 
 def main():
     if len(sys.argv) < 2:

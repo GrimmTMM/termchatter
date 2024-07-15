@@ -2,7 +2,7 @@ import os.path
 import pusher
 import sys
 sys.dont_write_bytecode = True
-import pusher_checker
+from . import pusher_checker
 
 def main(args):
     id_config = './.appid'
