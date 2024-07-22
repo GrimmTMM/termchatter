@@ -3,6 +3,7 @@ sys.dont_write_bytecode = True
 from . import setup
 from . import send_message
 from . import receive_message
+from . import credits
 
 def main():
     if len(sys.argv) < 2:
@@ -17,6 +18,8 @@ def main():
         send_message.main(sys.argv[2:])
     elif(command == "receive"):
         receive_message.main()
+    elif(command == "credits"):
+        credits.main()
     elif(command == "help"):
         print("setup:")
         print("  termchatter setup [channel]")

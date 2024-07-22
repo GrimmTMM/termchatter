@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "termchatter"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple terminal-based chatting app using Pusher"
 authors = ["GrimmTMM <themagnetboy1207@gmail.com>"]
 readme = "README.md"
