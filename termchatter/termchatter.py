@@ -15,7 +15,7 @@ def main():
     if(command == "setup"):
         setup.main(sys.argv[2:])
     elif(command == "send"):
-        send_message.main(sys.argv[2:])
+        send_message.main()
     elif(command == "receive"):
         receive_message.main()
     elif(command == "credits"):
@@ -29,7 +29,7 @@ def main():
         print("  termchatter setup pusher [app id] [app key] [secret] [cluster]")
         print("    Sets up pusher\n")
         print("chat:")
-        print("  termchatter send [message]")
+        print("  termchatter send")
         print("    Broadcasts a message to the pusher channel you've selected\n")
         print("  termchatter receive")
         print("    Run a listener to the pusher channel you've selected\n")

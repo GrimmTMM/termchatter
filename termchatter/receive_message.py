@@ -5,23 +5,21 @@ import time
 import re
 import os
 from . import pusher_checker
+from . import paths
 
 def main():
-    key_config = '.appkey'
-    cluster_config = '.cluster'
-    channel_name = '.channel'
     target_channel = ''
     app_key = ''
     cluster = ''
-    if(not os.path.exists(channel_name) or not pusher_checker.checker()):
+    if(not os.path.exists(paths.channel_name) or not pusher_checker.checker()):
         print("Channel or Pusher not setup")
         exit()
     else:
-        file = open(channel_name, 'r')
+        file = open(paths.channel_name, 'r')
         target_channel = file.read().replace('\n', '')
-        file = open(key_config, 'r')
+        file = open(paths.key_config, 'r')
         app_key = file.read().replace('\n', '')
-        file = open(cluster_config, 'r')
+        file = open(paths.cluster_config, 'r')
         cluster = file.read().replace('\n', '')
 
     pusher = pysher.Pusher(app_key, cluster=cluster)
